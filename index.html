@@ -1,0 +1,79 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="js/helloWorld.js"></script>
+</head>
+<body>
+	<script>document.write(helloWorld());</script>
+	<br/><div id="square">
+		<input type="number" id="num" placeholder="Number" alt="enter a whole number" required="yes" />
+		<br/>
+		<!-- <button onclick="window.alert(square(4))">Square</button> -->
+		<button onclick="square1()">Square</button>
+	</div>
+	
+	<div id="sum">
+		<br/>
+		<input type="number" id="num1" placeholder="num1" alt="enter a whole number" required="yes" />
+		<input type="number" id="num2" placeholder="num2" alt="enter a whole number" required="yes" />
+		<input type="number" id="num3" placeholder="num3" alt="enter a whole number" required="yes" />
+		<br/>
+		<button onclick="sumButtonUpdate()">Sum</button>
+	</div>
+	<br/><button id="buttonBob" onclick="bobButtonUpdate(p1)">Default Value</button>
+	
+	<div id="sum2">
+		<br/>
+		<input type="number" id="num4" placeholder="num4" alt="enter a whole number" required="yes" />
+		<input type="number" id="num5" placeholder="num5" alt="enter a whole number" required="yes" />
+		<br/>
+		<button onclick="sum2ButtonUpdate()">Click Me!</button>
+		<input type="number" id="num6" placeholder="num6" alt="output of sum 2" />
+	</div>
+	<div id="buildPerson">
+		<br/><input type="name" id="builderName" placeholder="name" alt="enter a name" required="yes" />
+		<br/><input type="number" id="builderAge" placeholder="age" alt="enter age" required="yes" />
+		<br/><input id="builderOccupation" placeholder="occupation" alt="enter occupation" required="yes" />
+		<br/><button id="personBuilderButton" onclick="personBuilderButtonUpdate()">Build</button>
+	</div>
+	
+	<br/><script>document.write(str);</script>
+	<br/><script>document.write(strToCaps(str));</script>
+	
+	<br/><script>var array = ["apple", "orange", "banana"];
+		document.write(array + "<br/>");
+		var newLength = array.push("kiwi");
+		document.write(array + "<br/>");
+		var last = array.pop();
+		document.write(array);
+	</script>
+	
+	<br/><script>document.write(count(10));</script>
+	<br/><script>document.write(countEven(10));</script>
+	<br/><script>fizzBuzz(100,3,'fizz',5,'buzz');</script>
+	<br/><script>document.write(divide(1));</script>
+	<br/><script>document.write(divide(3));</script>
+	<br/><script>document.write(divide(6));</script>
+	<br/><script>document.write(divide(9));</script>
+	<br/><script>document.write(divide(354));</script>
+	<br/>
+	<br/><script>document.write(triple("abcXXXabc"));</script>
+	<br/><script>document.write(triple("xxxabyyyycd"));</script>
+	
+	<div id="calculater">
+		<br/>
+		<input type="number" id="calc1" placeholder="calc1" alt="value 1" required="yes" />
+		<input type="number" id="calc2" placeholder="calc2" alt="value 2" required="yes" />
+		<br/>
+		<button id="add" onclick="calculatorButtonAdd()">+</button>
+		<button id="subtract" onclick="calculatorButtonSubtract()">-</button>
+		<button id="multiply" onclick="calculatorButtonMultiply()">x</button>
+		<button id="divide" onclick="calculatorButtonDivide()">/</button>
+		<br/>
+		<input type="number" id="calc3" value=0 alt="value 2" readonly />
+		<p id="error1">...</p>
+	</div>
+</body>
+</html>
