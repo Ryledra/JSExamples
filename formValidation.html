@@ -4,12 +4,18 @@
 	<title>Form Validation</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script src="js/formValidation.js"></script>
+	<style>
+	#dropDownStuff {
+		margin-right: 700;
+		background: #cccccc;
+	}
+	</style>
 <head>
 <body>
 	<form id="myForm" onsubmit="return formSubmit()" action="boo.html">
-		<input id="name" type="name" placeholder="Name" alt="enter name" />
-		<input id="email" placeholder="Email" alt="enter email" />
-		<br/><input id="dropdown" onclick="dropDown()" readonly placeholder="Occupation"/>
+		<input id="name" name="name" type="name" placeholder="Name" alt="enter name" />
+		<input id="email" name="email" placeholder="Email" alt="enter email" />
+		<br/><input id="dropdown" name="occupation" onclick="dropDown()" readonly placeholder="Occupation"/>
 		<input type="submit" />
 		<div id="dropDownStuff">
 			<a onclick="drop('QA Employee')">QA Employee</a>
