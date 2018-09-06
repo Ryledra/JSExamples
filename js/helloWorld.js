@@ -146,7 +146,8 @@ function changeTagFill(str)	{
 }
 
 function deleteTag()	{
-	
+	var parent = document.getElementById("addText");
+	parent.removeChild(parent.lastChild);
 }
 
 // button update functions

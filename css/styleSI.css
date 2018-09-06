@@ -1,0 +1,17 @@
+
+html{
+	background-color: #999999;
+}
+
+#game {
+	padding: 10px 10px 10px 10px;
+	background-color: #FFFFFF;
+	width: 750;
+	height: 300;
+	margin-left: 75;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: Arial;
+	color: #000000;
+}
