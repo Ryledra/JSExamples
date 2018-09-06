@@ -22,7 +22,14 @@ function formSubmit() {
 		document.getElementById("email").style.backgroundColor = 'white';
 	}
 	
-	// validate dropdown...
+	if(document.getElementById("dropdown").value == "")	{
+		document.getElementById("dropdown").style.backgroundColor = 'red';
+		console.log("select an occupation");
+		pass = false;
+	}else	{
+		document.getElementById("dropdown").style.backgroundColor = 'white';
+	}
+
 	return pass;
 }
 
@@ -42,5 +49,6 @@ function dropDown()	{
 
 function drop(str)	{
 	document.getElementById("dropdown").value = str;
+	document.getElementById("dropdown").style.backgroundColor = 'white';
 	dropDown();
 }
