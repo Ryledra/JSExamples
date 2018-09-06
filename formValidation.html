@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script src="js/formValidation.js"></script>
+<head>
+<body>
+	<form id="myForm" onsubmit="return formSubmit()" action="boo.html">
+		<input id="name" type="name" placeholder="Name" alt="enter name" />
+		<input id="email" placeholder="Email" alt="enter email" />
+		<br/><input id="dropdown" onclick="dropDown()" readonly placeholder="Occupation"/>
+		<input type="submit" />
+		<div id="dropDownStuff">
+			<a onclick="drop('QA Employee')">QA Employee</a>
+			<br/><a onclick="drop('Developer')">Developer</a>
+			<br/><a onclick="drop('Recruiter')">Recruiter</a>
+		</div>
+		<script>document.getElementById("dropDownStuff").style.display = 'none';</script>
+		
+	</form>
+</body>
+</html>

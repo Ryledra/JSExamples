@@ -9,11 +9,15 @@ var direction = 'right';
 function startGame()	{
 	restart();
 	document.getElementById("startButton").style.display = 'none';
-	gameInterval = window.setInterval(x,1);
+	gameInterval = window.setInterval(x,50);
 	
 	for (index1 = 0; index1 < 4; index1++)	{
 		for (index2 = 0; index2 < 10; index2++)	{
 			createInvader();
+			posX = dX + (index2 * 10);
+			posY = dY + (index1 * 10);
+			document.getElementById("invaders").lastChild.style.top = posY;
+			document.getElementById("invaders").lastChild.style.left = posX;
 		}
 	}
 	// console.log(document.getElementById("invaders").childNodes.length);
