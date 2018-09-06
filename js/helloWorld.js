@@ -14,6 +14,8 @@ var p2 = {
 	occupation: ''
 };
 
+var i = 1;
+
 var num3 = 4;
 var str = 'He said "my name is Elliot"';
 
@@ -128,6 +130,23 @@ function validate()	{
 	else if (filled == 2) document.getElementById("error1").innerHTML="Please fill in calc1";
 	else if (filled == 3) document.getElementById("error1").innerHTML="Please fill in calc2";
 	return false;
+}
+
+function createPTag()	{
+	var para = document.createElement("p");
+	var node = document.createTextNode("This is new.");
+	para.appendChild(node);
+	
+	var element = document.getElementById("addText");
+	element.appendChild(para);
+}
+
+function changeTagFill(str)	{
+	
+}
+
+function deleteTag()	{
+	
 }
 
 // button update functions

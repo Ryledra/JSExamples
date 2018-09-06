@@ -4,6 +4,7 @@
 	<title>Hello World</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script src="js/helloWorld.js"></script>
+	<script src="js/heros.js"></script>
 </head>
 <body>
 	<script>document.write(helloWorld());</script>
@@ -38,7 +39,7 @@
 		<br/><input id="builderOccupation" placeholder="occupation" alt="enter occupation" required="yes" />
 		<br/><button id="personBuilderButton" onclick="personBuilderButtonUpdate()">Build</button>
 	</div>
-	
+	<div id="smallBits">
 	<br/><script>document.write(str);</script>
 	<br/><script>document.write(strToCaps(str));</script>
 	
@@ -61,7 +62,7 @@
 	<br/>
 	<br/><script>document.write(triple("abcXXXabc"));</script>
 	<br/><script>document.write(triple("xxxabyyyycd"));</script>
-	
+	</div>
 	<div id="calculater">
 		<br/>
 		<input type="number" id="calc1" placeholder="calc1" alt="value 1" required="yes" />
@@ -74,6 +75,10 @@
 		<br/>
 		<input type="number" id="calc3" value=0 alt="value 2" readonly />
 		<p id="error1">...</p>
+	</div>
+	
+	<div id="addText">
+		<br/><button id="pTag" onclick="createPTag()" >Add pTag</button>
 	</div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html onmousemove="updateFollower()">
+	<head>
+		<title>followMouse</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/followMouse.js"></script>
+	</head>
+	<body>
+		<input id="x" value="hello" onmouseover="mouseEntered()" />
+		<span id="follower" style="position:absolute; top:yPos; left:xPos" >world</span>
+		<br/><input value="backToGreen" onmouseover="backColor('green')" readonly />
+		<br/><input value="backToRed" onmouseover="backColor('red')" readonly />
+		<br/><input value="backToBlue" onmouseover="backColor('blue')" readonly />
+		<br/><input value="backToBlack" onmouseover="backColor('black')" readonly />
+		<br/><input value="visibility" onmouseover="toggleVisibility()" readonly />
+	</body>
+</html>
