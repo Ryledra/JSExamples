@@ -6,13 +6,16 @@
 	<script src="js/formValidation.js"></script>
 	<style>
 	#dropDownStuff {
-		margin-right: 700;
+		position:absolute;
+		top:50;
+		padding: 0px, 15px;
+		left: 150;
 		background: #cccccc;
 	}
 	</style>
 <head>
 <body>
-	<form id="myForm" onsubmit="return formSubmit()" action="boo.html">
+	<form id="myForm" onsubmit="return formSubmit()" action="formValidation.html">
 		<input id="name" name="name" type="name" placeholder="Name" alt="enter name" />
 		<input id="email" name="email" placeholder="Email" alt="enter email" />
 		<br/><input id="dropdown" name="occupation" onclick="dropDown()" readonly placeholder="Occupation"/>
